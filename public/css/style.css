@@ -25,10 +25,9 @@ h4 {
   margin-top: 0.5rem;
 }
 
-section:before {
-  height: 3rem;
-  content: "";
-  display:block;
+section {
+  padding-top: 3rem;
+  margin-top: -3rem;
 }
 
 .text-white-75 {
