@@ -1,6 +1,9 @@
 body {
   min-height: 75rem;
-  padding-top: 4rem;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 /* Rounded images on main page */
@@ -19,4 +22,10 @@ h3 {
 
 h4 {
   margin-top: 0.5rem;
+}
+
+section:before {
+  height: 4rem;
+  content: "";
+  display:block;
 }
