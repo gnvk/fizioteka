@@ -2,3 +2,9 @@ body {
   min-height: 75rem;
   padding-top: 4.5rem;
 }
+
+/* Rounded images on main page */
+#problems img {
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
