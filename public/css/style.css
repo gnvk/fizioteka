@@ -1,10 +1,22 @@
 body {
   min-height: 75rem;
-  padding-top: 4.5rem;
+  padding-top: 4rem;
 }
 
 /* Rounded images on main page */
 #problems img {
   border-radius: 0.25rem;
   margin-bottom: 0.5rem;
+}
+
+.row {
+  margin-top: 0.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-top: 0.5rem;
 }
