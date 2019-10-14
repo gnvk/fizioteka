@@ -12,7 +12,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
     <div class="container">
       <a class="navbar-brand" href="#">FizioTéKa</a>
       <ul class="navbar-nav d-none d-sm-block">
@@ -44,10 +44,15 @@
     </div>
   </nav>
 
-  <div class="jumbotron bg-primary mb-0 pb-5">
-    <div class="container">
-      <h1 class="display-3 text-white">FizioTéKa</h3>
-        <h3 class="text-white-75">The reason I exercise is for the quality of life I enjoy.</h3>
+  <div class="jarallax vh-100">
+    <img class="jarallax-img" src="public/img/splash.jpg" alt="">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col text-white-90">
+          <h1 class="display-3">FizioTéKa</h1>
+          <h3>The reason I exercise is for the quality of life I enjoy.</h3>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -349,9 +354,15 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
+  <script src="public/js/jarallax.min.js"></script>
+
   <script>
     $('.navbar a').on('click', function () {
       $('.navbar-collapse').collapse('hide');
+    });
+
+    $('.jarallax').jarallax({
+      speed: 0.5
     });
   </script>
 </body>
