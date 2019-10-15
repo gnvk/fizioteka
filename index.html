@@ -49,8 +49,8 @@
 
   <main>
 
-    <div class="splash jarallax vh-100">
-      <img class="jarallax-img" src="public/img/splash.jpg" alt="">
+    <div class="jarallax vh-100">
+      <img id="splash-img" class="jarallax-img" src="public/img/splash.jpg">
       <div class="container d-flex h-100">
         <div class="row justify-content-center align-self-center">
           <div class="col">
@@ -364,19 +364,18 @@
   <script src="public/js/jarallax-1.10.7.min.js"></script>
 
   <script>
-    $('main').hide()
-
     $('.navbar a').on('click', function () {
       $('.navbar-collapse').collapse('hide');
     });
 
     $('.jarallax').jarallax({
-      speed: 0.5
+      speed: 0.5,
+      imgPosition: '80% 60%'
     });
 
-    $(function () {
-      $('main').fadeIn(500);
-    })
+    $('#splash-img').bind('load', function () {
+      $(this).hide().fadeIn(1000);
+    });
   </script>
 </body>
 
