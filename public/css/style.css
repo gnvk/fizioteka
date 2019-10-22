@@ -19,6 +19,7 @@ body {
 #problems img {
   border-radius: 0.25rem;
   margin-bottom: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2)
 }
 
 #problems img:hover {
