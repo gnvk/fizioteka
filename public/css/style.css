@@ -1,4 +1,5 @@
 html {
+  padding-top: 3.5rem;
   scroll-behavior: smooth;
 }
 
@@ -16,7 +17,7 @@ body {
   min-height: 350px;
 }
 
-#problems img {
+main img {
   border-radius: 0.25rem;
   margin-bottom: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2)
@@ -32,15 +33,15 @@ body {
 }
 
 h3 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 h4 {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 section {
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   margin-top: -3rem;
 }
 
