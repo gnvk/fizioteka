@@ -12,7 +12,7 @@ body {
 }
 
 #splash {
-  height: 100vh;
+  height: 30vh;
   min-height: 350px;
 }
 
@@ -40,7 +40,7 @@ h4 {
 }
 
 section {
-  padding-top: 3rem;
+  padding-top: 4rem;
   margin-top: -3rem;
 }
 
