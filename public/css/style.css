@@ -28,6 +28,24 @@ main img {
   transition: all .2s linear;
 }
 
+#movement-problems .title {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#movement-problems .subtitle {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#movement-problems .subtitle > h6 {
+  margin-bottom: 0px;
+}
+
 .row {
   margin-top: 0.5rem;
 }
