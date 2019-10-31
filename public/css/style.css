@@ -63,6 +63,11 @@ section {
   margin-top: -3rem;
 }
 
+.price {
+  min-width: 180px;
+  text-align: center;
+}
+
 .text-white-90 {
   color: rgba(255, 255, 255, 0.9)
 }
