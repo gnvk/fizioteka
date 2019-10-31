@@ -19,13 +19,16 @@ body {
 
 main img {
   border-radius: 0.25rem;
-  margin-bottom: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2)
 }
 
 #problems > div > div:hover {
   transform: scale(1.05);
   transition: all .2s linear;
+}
+
+#problems .col, .col-md {
+  padding: 15px;
 }
 
 .subtitle {
