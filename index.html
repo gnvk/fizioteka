@@ -7,8 +7,9 @@
   <meta name="theme-color" content="#ff3333">
 
   <link rel="icon" sizes="192x192" href="public/img/icon.png">
-  <link rel="stylesheet" href="public/css/bootstrap.min.css">
-  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="public/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/style.css">
 
   <title>FizioTéKa</title>
 </head>
@@ -229,8 +230,73 @@
             </ul>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
+        <h4 class="text-primary mt-5">Alkalmazott technikák</h4>
+        <div class="row justify-content-center">
+          <div class="col-1 align-self-center">
+            <a id="slider-left" class="text-decoration-none">
+              <h2 class="lnr lnr-arrow-left mb-0 text-center"></h2>
+            </a>
+          </div>
+          <div id="concept" class="slider col-10  text-center">
+            <div class="slick-slide">
+              <img class="img-fluid" src="public/img/techniques/manualterapia.jpg">
+              <div class="subtitle">
+                <h6>Manuálterápia</h6>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <img class="img-fluid" src="public/img/techniques/gyogytorna.jpg">
+              <div class="subtitle">
+                <h6>Gyógytorna</h6>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <img class="img-fluid" src="public/img/techniques/mckenzie.jpg">
+              <div class="subtitle">
+                <h6>McKenzie terápia</h6>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <img class="img-fluid" src="public/img/techniques/kinesio_taping.jpg">
+              <div class="subtitle">
+                <h6>Kinesio taping</h6>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <img class="img-fluid" src="public/img/techniques/gerincstabilizacio.jpg">
+              <div class="subtitle">
+                <h6>Gerincstabilizációs tréning</h6>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <img class="img-fluid" src="public/img/techniques/lagyresz.jpg">
+              <div class="subtitle">
+                <h6>Kötőszöveti technikák</h6>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <img class="img-fluid" src="public/img/techniques/idegmobilizacio.jpg">
+              <div class="subtitle">
+                <h6>Perifériás idegmobilizáció</h6>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <img class="img-fluid" src="public/img/techniques/stretching.jpg">
+              <div class="subtitle">
+                <h6>Stretching</h6>
+              </div>
+            </div>
+            <div class="slick-slide">
+              <img class="img-fluid" src="public/img/techniques/myofascialis.jpg">
+              <div class="subtitle">
+                <h6>Myofasciális terápia</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 align-self-center p-0">
+            <a id="slider-right" class="text-decoration-none">
+              <h2 class="lnr lnr-arrow-right mb-0 text-center"></h2>
+            </a>
           </div>
         </div>
       </section>
@@ -243,10 +309,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 order-lg-1">
+          <div class="col-md-4 order-md-1">
             <img class="img-fluid mb-4" src="public/img/about.jpg">
           </div>
-          <div class="col-lg-8 order-lg-0">
+          <div class="col-md-8 order-md-0">
             <p>
               Többéves versenysportolói tapasztalataim és az emberi szervezet lenyűgöző tulajdonságai miatt választottam
               szakmámnak a fizioterápiát. 2015-ben fejeztem be egyetemi tanulmányaim és azóta is folyamatosan motivál,
@@ -371,10 +437,11 @@
     </div>
   </footer>
 
-  <script src="public/js/jquery-3.4.1.min.js"></script>
-  <script src="public/js/popper-1.14.7.min.js"></script>
-  <script src="public/js/bootstrap-4.3.1.min.js"></script>
-  <script src="public/js/jarallax-1.11.1.min.js"></script>
+  <script type="text/javascript" src="public/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="public/js/popper-1.14.7.min.js"></script>
+  <script type="text/javascript" src="public/js/bootstrap-4.3.1.min.js"></script>
+  <script type="text/javascript" src="public/js/jarallax-1.11.1.min.js"></script>
+  <script type="text/javascript" src="public/js/slick-1.8.1.min.js"></script>
 
   <script>
     $('.navbar a').on('click', function () {
@@ -384,6 +451,25 @@
     $('.jarallax').jarallax({
       speed: 0.5,
       imgPosition: '80% 60%'
+    });
+
+    $('#concept').slick({
+      slidesToShow: 3,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+    $('#slider-left').click(function () {
+      $('#concept').slick('slickPrev');
+    });
+    $('#slider-right').click(function () {
+      $('#concept').slick('slickNext');
     });
   </script>
 </body>

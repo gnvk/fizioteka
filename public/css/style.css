@@ -18,9 +18,15 @@ main img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2)
 }
 
-#problems > div > div:hover {
-  transform: scale(1.05);
-  transition: all .2s linear;
+#problems > .row > .col,.col-md {
+  -webkit-transition: transform .2s ease-out;
+  -moz-transition: transform .2s ease-out;
+  -o-transition: transform .2s ease-out;
+  transition: transform .2s ease-out;
+}
+
+#problems > .row > .col:hover,.col-md:hover {
+  transform: scale(1.1);
 }
 
 #problems .col, .col-md {
@@ -52,10 +58,6 @@ main img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.row {
-  margin-top: 0.5rem;
-}
-
 h3 {
   margin-top: 1.5rem;
 }
@@ -78,6 +80,7 @@ section {
   color: rgba(255, 255, 255, 0.9)
 }
 
+/* Jarallax */
 .jarallax {
   position: relative;
   z-index: 0;
@@ -89,4 +92,36 @@ section {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+/* Slider */
+.slick-slide {
+  position: relative;
+  margin: 15px;
+  -webkit-transition: transform .2s ease-out;
+  -moz-transition: transform .2s ease-out;
+  -o-transition: transform .2s ease-out;
+  transition: transform .2s ease-out;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slick-current + .slick-active {
+  transform: scale(1.2);
+}
+
+.slick-track {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  display: flex;
+}
+
+#slider-left:hover,#slider-right:hover {
+  color: #ff3333;
 }
