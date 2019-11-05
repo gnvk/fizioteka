@@ -28,6 +28,10 @@ main img {
   padding: 15px;
 }
 
+#problem-details ul {
+  padding-left: 24px;
+}
+
 .subtitle {
   position: absolute;
   top: 0;
