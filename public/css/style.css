@@ -8,11 +8,6 @@ body {
   letter-spacing: 0.1rem;
 }
 
-#splash {
-  height: 30vh;
-  min-height: 350px;
-}
-
 main img {
   border-radius: 0.25rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2)
@@ -81,6 +76,12 @@ section {
 }
 
 /* Jarallax */
+#splash {
+  height: 30vh;
+  min-height: 350px;
+  padding-top: 50px;
+}
+
 .jarallax {
   position: relative;
   z-index: 0;
