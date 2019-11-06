@@ -116,13 +116,13 @@ section {
   display: flex;
 }
 
-.slick-current + .slick-active {
+.slick-center {
   transform: scale(1.2);
 }
 
 #concept .slick-track {
   padding-top: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   display: flex;
 }
 
@@ -137,5 +137,8 @@ section {
 
 #concept-description .slick-slide {
   justify-content: center;
-  text-align: center;
+}
+
+#concept-description .slick-slide p {
+  text-align: center !important;
 }
