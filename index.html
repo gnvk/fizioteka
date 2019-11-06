@@ -299,6 +299,37 @@
             </a>
           </div>
         </div>
+        <div class="row justify-content-center">
+          <div id="concept-description" class="col-10">
+            <div>
+              <p>speciális fogás- és mobilizációs technikákból álló fizioterápiai kezelésforma</p>
+            </div>
+            <div>
+              <p>főképp mobilizáló, nyújtó és erősítő gyakorlatokból álló terápiás célú aktív mozgásforma</p>
+            </div>
+            <div>
+              <p>a gerinc, különösen a porckorong érintettsége esetén alkalmazott speciális terápia</p>
+            </div>
+            <div>
+              <p>a rugalmas tapasz speciális felhelyezésével növelhető a terápiás hatás</p>
+            </div>
+            <div>
+              <p>a csigolyák közötti kicsi, de annál jelentősebb izmok aktív erősítése</p>
+            </div>
+            <div>
+              <p>lágy technikák a szövetek megnyugtatása, ellazítása céljából</p>
+            </div>
+            <div>
+              <p>az ideg vérellátásának javítására alkalmas technika</p>
+            </div>
+            <div>
+              <p>a kontraktilis szövetek lazítására, oldására szolgáló technika</p>
+            </div>
+            <div>
+              <p>a vázizmokban kialakult fájdalmas izomcsomók, trigger pontok oldása</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="about">
@@ -456,6 +487,8 @@
     $('#concept').slick({
       slidesToShow: 3,
       arrows: false,
+      asNavFor: '#concept-description',
+      focusOnSelect: true,
       responsive: [
         {
           breakpoint: 768,
@@ -465,6 +498,14 @@
         }
       ]
     });
+    $('#concept-description').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '#concept'
+    });
+
     $('#slider-left').click(function () {
       $('#concept').slick('slickPrev');
     });

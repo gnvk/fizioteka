@@ -100,7 +100,7 @@ section {
 }
 
 /* Slider */
-.slick-slide {
+#concept .slick-slide {
   position: relative;
   margin: 15px;
   -webkit-transition: transform .2s ease-out;
@@ -117,8 +117,8 @@ section {
   transform: scale(1.2);
 }
 
-.slick-track {
-  padding-top: 20px;
+#concept .slick-track {
+  padding-top: 15px;
   padding-bottom: 25px;
   display: flex;
 }
@@ -130,4 +130,9 @@ section {
 #concept img {
   width: 100%;
   height: 100%;
+}
+
+#concept-description .slick-slide {
+  justify-content: center;
+  text-align: center;
 }
