@@ -28,8 +28,12 @@ main img {
   padding: 15px;
 }
 
-#problem-details ul {
-  padding-left: 24px;
+.symptoms {
+  margin-bottom: 0px;
+}
+
+#problem-details img {
+  margin-bottom: 25px;
 }
 
 .subtitle {
