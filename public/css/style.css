@@ -126,3 +126,8 @@ section {
 #slider-left:hover,#slider-right:hover {
   color: #ff3333;
 }
+
+#concept img {
+  width: 100%;
+  height: 100%;
+}
