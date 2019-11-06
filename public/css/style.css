@@ -81,9 +81,8 @@ section {
 
 /* Jarallax */
 #splash {
-  height: 30vh;
+  height: 100vh;
   min-height: 350px;
-  padding-top: 50px;
 }
 
 .jarallax {
