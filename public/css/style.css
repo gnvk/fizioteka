@@ -120,14 +120,20 @@ section {
   display: flex;
 }
 
-.slick-center {
-  transform: scale(1.2);
-}
-
 #concept .slick-track {
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   display: flex;
+}
+
+@media (min-width: 768px) {
+  .slick-center {
+    transform: scale(1.2);
+  }
+
+  #concept .slick-track {
+    padding-bottom: 30px;
+  }
 }
 
 #slider-left:hover,#slider-right:hover {
